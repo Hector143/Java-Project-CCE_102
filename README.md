@@ -1,5 +1,5 @@
 # Java-Project-CCE_102
-Covers java fundamentals such as:
+This Topic Focuses in Java Programming Languages, it covers java fundamentals such as:
 -Basic Syntax
 -Inputs using Scanner
 -Console Based Output
