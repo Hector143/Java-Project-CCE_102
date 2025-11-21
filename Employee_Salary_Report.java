@@ -51,7 +51,7 @@ public class Employee_Salary_Report {
 		System.out.println("Salary report successfully created.");
 		
 		readReport(file);
-
+		scan.close();
 	}
 	
 	public static String inputEmployees(Scanner scan, int number) {
@@ -135,3 +135,4 @@ public class Employee_Salary_Report {
 	}
 
 }
+
