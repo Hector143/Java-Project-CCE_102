@@ -4,6 +4,8 @@ This Topic Focuses in Java Programming Languages, it covers java fundamentals su
 -Inputs using Scanner
 -Console Based Output
 -Conditional Statements
+-Loops / Iterations
+-Nested conditions/loops
 -Arrays
 -File Handling (File, FileWriter)
 -Methods
