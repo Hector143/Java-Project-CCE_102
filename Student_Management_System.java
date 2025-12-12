@@ -1,5 +1,3 @@
-package Projects_FileHandling;
-
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileWriter;
@@ -23,7 +21,7 @@ public class Student_Management_System {
 		int options = 0;
 		do {
 			System.out.println("\nSTUDENT MANAGEMENT SYSTEM");
-			System.out.println("1 – Add Student\n2 – Update Marks\n3 – Delete Student\n4 – Display Students (Sorted by Marks)\n5 – Save Records\n6 – Exit\n");
+			System.out.println("1 – Add Student\n2 – Update Marks\n3 – Delete Student\n4 – Display Students (Sorted by Marks)\n5 – Save Records\n6 – Display File Output\n7 – Exit\n");
 			System.out.print("Choose an option: ");
 			options = scan.nextInt();
 			scan.nextLine();
@@ -45,6 +43,9 @@ public class Student_Management_System {
 				saveToFile(file, name, roll, marks, count);
 				break;
 			case 6:
+				readFile(file);
+				break;
+			case 7:
 				System.out.println("Program ended.");
 				System.exit(0);
 				break;
@@ -168,7 +169,20 @@ public class Student_Management_System {
 			System.out.println("Records saved to students.txt");
 			writer.close();
 		} catch (Exception e) {
-			System.out.println("Error");
+			System.out.println("Error My Friend");
+		}
+	}
+	
+	public static void readFile(File file) {
+		System.out.println("Reading students.txt file...\n");
+		try {
+			Scanner read = new Scanner(file);
+			while (read.hasNextLine()) {
+				System.out.println(read.nextLine());
+			}
+			read.close();
+		} catch (Exception e) {
+			System.err.println("Error My Friend");
 		}
 	}
 		
